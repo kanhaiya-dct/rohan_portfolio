@@ -1,0 +1,19 @@
+{
+  "name": "rohan-os-portfolio",
+  "version": "1.0.0",
+  "description": "Premium Retro Terminal Portfolio for Rohan - UI/UX Designer",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx -y http-server -p 8080",
+    "dev": "npx -y http-server -p 8080"
+  },
+  "keywords": [
+    "portfolio",
+    "terminal",
+    "retro",
+    "ui-ux",
+    "designer"
+  ],
+  "author": "Rohan",
+  "license": "ISC"
+}

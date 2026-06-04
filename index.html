@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- SEO Optimization Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rohan OS - Premium UI/UX Designer Portfolio Workstation</title>
+  <meta name="description" content="Explore ROHAN_OS: A highly immersive retro terminal operating system portfolio showcasing premium UI/UX SaaS dashboard designs, design systems, and responsive wireframes by Rohan.">
+  <meta name="keywords" content="Rohan, Rohan UI/UX, Rohan Yamunanagar, UI/UX Designer, Design System, SaaS Portfolio, Retro Terminal Portfolio, Cyberpunk Designer Website">
+  <meta name="author" content="Rohan">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="crt-scanlines-active">
+
+  <!-- Togglable CRT Scanline Overlay Filter -->
+  <div class="crt-scanlines-overlay"></div>
+  <div class="crt-scanline-beam"></div>
+
+  <!-- Main Terminal Monitor Screen Container -->
+  <div class="crt-container">
+    <div class="crt-screen">
+      
+      <!-- Top System Status Header Bar -->
+      <header class="sys-header" id="top-bar">
+        <div class="sys-header-left">
+          <span class="sys-title">📡 ROHAN_OS v2.6.0-LTS</span>
+          <div class="sys-status-indicator">
+            <span class="status-dot"></span>
+            <span class="text-green" style="font-size: 11px;">SYSTEM: ONLINE</span>
+          </div>
+        </div>
+        <div class="sys-header-right">
+          <a href="https://www.linkedin.com/in/rohan-khurana-425912266" target="_blank" class="sys-btn" id="linkedin-btn" title="Open LinkedIn Profile" style="color:var(--color-orange); border-color:var(--color-orange); font-weight:bold;">[ LINKEDIN_PROFILE ]</a>
+          <button class="sys-btn" id="sound-toggle" title="Toggle audio synthesizer beep">🔊 SOUND: ON</button>
+          <button class="sys-btn" id="crt-toggle" title="Toggle CRT scanline filter">📺 CRT: FILTER</button>
+          <span class="text-orange" id="sys-clock">--:--:-- IST</span>
+        </div>
+      </header>
+
+      <!-- Main Desktop Operating Workspace Split -->
+      <div class="workspace-container">
+        
+        <!-- Left Folder Navigation Sidebar Tree -->
+        <aside class="sys-sidebar">
+          <div class="sidebar-title">📁 WORKSPACE_TREE</div>
+          <ul class="dir-tree">
+            <!-- Root Folder node -->
+            <li>
+              <div class="dir-node" style="font-weight: bold; pointer-events: none; color: var(--color-orange);">
+                <span>📂</span> rohan_os/
+              </div>
+              <ul class="dir-tree dir-indent">
+                <li>
+                  <div class="dir-node active" data-file="home_sh">
+                    <span class="file-icon"></span> home.sh
+                  </div>
+                </li>
+                <li>
+                  <div class="dir-node" data-file="design_works_sh">
+                    <span class="file-icon"></span> design_works.sh
+                  </div>
+                </li>
+                <li>
+                  <div class="dir-node" data-file="my_details_json">
+                    <span class="file-icon"></span> my_details.json
+                  </div>
+                </li>
+                <li>
+                  <div class="dir-node" data-file="gallery_sh">
+                    <span class="file-icon"></span> gallery.sh
+                  </div>
+                </li>
+                <li>
+                  <div class="dir-node" data-file="resume_pdf">
+                    <span class="file-icon"></span> resume.pdf
+                  </div>
+                </li>
+                <li>
+                  <div class="dir-node" data-file="live_deploys_sh">
+                    <span class="file-icon"></span> live_deploys.sh
+                  </div>
+                </li>
+                <li>
+                  <div class="dir-node" data-file="contact_init_sh">
+                    <span class="file-icon"></span> contact_init.sh
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </aside>
+
+        <!-- Right Viewport Display Window -->
+        <main class="sys-viewport">
+          
+          <!-- Viewport Tab Bar -->
+          <div class="viewport-tabs" id="editor-tabs">
+            <!-- Dynamic active tabs loaded here by app.js -->
+            <div class="viewport-tab active" data-tab="home_sh">
+              <span class="file-icon"></span>
+              <span>home.sh</span>
+            </div>
+          </div>
+
+          <!-- Active Viewport Content Area -->
+          <div class="viewport-content" id="viewport-pane">
+            
+            <!-- SECTION 1: HOME (home.sh) -->
+            <section class="panel-section active" id="home_sh">
+              <div class="home-layout">
+                <div class="home-main">
+                  <h1 class="pixel-header">ROHAN_OS</h1>
+                  
+                  <!-- Welcome Intro Box -->
+                  <div class="availability-panel" style="gap: 8px;">
+                    <div class="panel-header">📄 system_intro.sh</div>
+                    <div class="welcome-msg" style="border: none; padding: 0; background: transparent; margin: 0; font-family: var(--font-code); font-size: 13px;">
+                      <span class="text-orange">// SYSTEM BOOT SUCCESSFUL. ACCESSING PROFILE CREDENTIALS...</span><br/>
+                      <span style="font-family: var(--font-ui); font-size:15px; line-height:1.5;">I am <strong>Rohan</strong>, a professional UI/UX Designer based in Yamunanagar, India. Meticulous about creating cohesive design systems, human-centered user flows, and high-fidelity prototypes that drive user success. I approach interface design with systems thinking, prioritizing clarity over complexity.</span>
+                    </div>
+                  </div>
+
+                  <!-- Dashboard Subgrid (Philosophy Manifesto & Stats) -->
+                  <div class="home-dashboard-subgrid">
+                    <!-- Philosophy Manifesto Panel -->
+                    <div class="availability-panel" style="gap: 8px;">
+                      <div class="panel-header">💡 DESIGN_MANIFESTO</div>
+                      <div style="font-family: var(--font-code); font-size: 13px; line-height: 1.6;">
+                        <div class="text-green">&gt; Human-first experiences.</div>
+                        <div class="text-green">&gt; Design systems before screens.</div>
+                        <div class="text-green">&gt; Simplicity over complexity.</div>
+                        <div class="text-green">&gt; Function before decoration.</div>
+                        <div class="text-green">&gt; Every pixel should have a purpose.</div>
+                      </div>
+                    </div>
+
+                    <!-- Statistics Telemetry Panel -->
+                    <div class="availability-panel" style="gap: 6px;">
+                      <div class="panel-header">📊 SYSTEM_STATS</div>
+                      <div class="stat-pill"><span>EXPERIENCE:</span><span class="val">1+ Years</span></div>
+                      <div class="stat-pill"><span>COMPLETED:</span><span class="val">5+ Projects</span></div>
+                      <div class="stat-pill"><span>TOOLKIT:</span><span class="val">3+ Design Tools</span></div>
+                      <div class="stat-pill"><span>LEARNING_MODE:</span><span class="val">100% Active</span></div>
+                    </div>
+                  </div>
+
+                  <!-- Featured Projects Panel -->
+                  <div class="availability-panel" style="gap: 8px;">
+                    <div class="panel-header">⭐ FEATURED_PROJECTS_PREVIEW</div>
+                    <div class="home-featured-grid">
+                      <!-- Project 1 -->
+                      <div style="border: 1px dashed var(--border-color); padding: 10px; display:flex; flex-direction:column; justify-content:space-between; height: 110px; background-color: rgba(0,0,0,0.02);">
+                        <div>
+                          <div style="font-family: var(--font-code); font-size:11px; color:var(--text-muted);">NODE_01</div>
+                          <div style="font-weight:bold; color:var(--color-orange); font-size:14px; margin-top:2px;">MMCI Coaching Institute</div>
+                        </div>
+                        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:6px;">
+                          <span class="text-green" style="font-size:11px; font-weight:bold;">● LIVE</span>
+                          <span class="btn-inspect" style="font-size:11px; cursor:pointer;" onclick="window.ROHAN_APP.openFile('design_works_sh'); window.ROHAN_APP.inspectProject('NODE_01');">INSPECT() &gt;</span>
+                        </div>
+                      </div>
+                      <!-- Project 2 -->
+                      <div style="border: 1px dashed var(--border-color); padding: 10px; display:flex; flex-direction:column; justify-content:space-between; height: 110px; background-color: rgba(0,0,0,0.02);">
+                        <div>
+                          <div style="font-family: var(--font-code); font-size:11px; color:var(--text-muted);">NODE_03</div>
+                          <div style="font-weight:bold; color:var(--color-orange); font-size:14px; margin-top:2px;">Socialy</div>
+                        </div>
+                        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:6px;">
+                          <span class="text-green" style="font-size:11px; font-weight:bold;">● ONLINE</span>
+                          <span class="btn-inspect" style="font-size:11px; cursor:pointer;" onclick="window.ROHAN_APP.openFile('design_works_sh'); window.ROHAN_APP.inspectProject('NODE_03');">INSPECT() &gt;</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Quick Access Navigation directories -->
+                  <div style="margin-top: 10px;">
+                    <h4 style="color:var(--color-orange); margin-bottom:8px;">WORKSPACE DIRECTORIES:</h4>
+                    <div class="home-menu-grid">
+                      <button class="home-menu-btn" onclick="window.ROHAN_APP.openFile('resume_pdf')">
+                        <span>[ ABOUT_SYSTEM ]</span>
+                        <span class="tag">cat resume.pdf</span>
+                      </button>
+                      <button class="home-menu-btn" onclick="window.ROHAN_APP.openFile('design_works_sh')">
+                        <span>[ DESIGN_WORKS ]</span>
+                        <span class="tag">sh design_works.sh</span>
+                      </button>
+                      <button class="home-menu-btn" onclick="window.ROHAN_APP.openFile('gallery_sh')">
+                        <span>[ DESIGN_GALLERY ]</span>
+                        <span class="tag">sh gallery.sh</span>
+                      </button>
+                      <button class="home-menu-btn" onclick="window.ROHAN_APP.openFile('resume_pdf')">
+                        <span>[ DOWNLOAD_RESUME ]</span>
+                        <span class="tag">get resume.pdf</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Home Right Sidebar Availability panel -->
+                <div class="availability-panel" style="height: fit-content;">
+                  <div class="panel-header">🛰️ TELEMETRY_PANEL</div>
+                  
+                  <div class="avail-row">
+                    <span class="avail-label">STATUS:</span>
+                    <span class="avail-val text-green" style="display:flex; align-items:center; gap:6px;">
+                      <span class="status-dot pulse-dot"></span> ACTIVE_READY
+                    </span>
+                  </div>
+
+                  <div class="avail-row">
+                    <span class="avail-label">CURRENT_FOCUS:</span>
+                    <div style="font-size:13px; line-height:1.4; display:flex; flex-direction:column; gap:4px; margin-top:2px;">
+                      <div class="text-orange">&gt; Designing intuitive digital experiences.</div>
+                      <div class="text-orange">&gt; Learning advanced UX research methods.</div>
+                      <div class="text-orange">&gt; Building scalable design systems.</div>
+                      <div class="text-orange">&gt; Exploring AI-assisted design workflows.</div>
+                    </div>
+                  </div>
+
+                  <div class="avail-row" style="border-top:1px dashed var(--border-color); padding-top:12px;">
+                    <span class="avail-label">DESIGN TOOLS SHOWCASE:</span>
+                    <div style="margin-top:4px;">
+                      <span class="tool-badge">Figma</span>
+                      <span class="tool-badge">Canva</span>
+                      <span class="tool-badge">Framer</span>
+                    </div>
+                  </div>
+
+                  <div class="avail-row" style="border-top:1px dashed var(--border-color); padding-top:12px;">
+                    <span class="avail-label">CAPABILITIES SNAPSHOT:</span>
+                    <div style="display:flex; flex-wrap:wrap; gap:4px; margin-top:4px;">
+                      <span class="project-tag">wireframing</span>
+                      <span class="project-tag">prototyping</span>
+                      <span class="project-tag">design_systems</span>
+                      <span class="project-tag">systems_thinking</span>
+                    </div>
+                  </div>
+
+                  <div class="cta-box" style="border: var(--border-style); background-color: rgba(15, 143, 53, 0.02); margin-top: 10px; padding: 12px; display:flex; flex-direction:column; gap:8px; text-align:center;">
+                    <button class="btn-execute" style="font-size: 13px; padding: 8px 16px; width: 100%; text-align:center; display:block;" onclick="window.ROHAN_APP.openFile('contact_init_sh'); window.ROHAN_APP.terminal.startCollaborationWizard();">
+                      EXECUTE_COLLABORATION()
+                    </button>
+                    <a href="https://www.linkedin.com/in/rohan-khurana-425912266" target="_blank" class="btn-execute" style="background-color: var(--color-orange); font-size: 12px; padding: 8px 16px; width: 100%; text-align:center; text-decoration:none; display:block; box-sizing:border-box;">
+                      OPEN_LINKEDIN_PROFILE()
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- SECTION 2: DESIGN WORKS (design_works.sh) -->
+            <section class="panel-section" id="design_works_sh">
+              <h2 class="pixel-header">WORKS_DIRECTORY // PROJECT_ARCHIVE // DESIGN_WORKS</h2>
+              <div class="projects-grid" id="projects-grid">
+                <!-- Case study cards dynamically generated by app.js -->
+              </div>
+            </section>
+
+            <!-- SECTION 3: PROFILE JSON (my_details.json) -->
+            <section class="panel-section" id="my_details_json">
+              <h2 class="pixel-header">MY_DETAILS.JSON</h2>
+              <div class="details-layout">
+                
+                <!-- Center Code Editor Mockup -->
+                <div class="editor-wrapper">
+                  <div class="editor-header">
+                    <span>📄 rohan_os/my_details.json</span>
+                    <span class="text-green">JSON_VALIDATED</span>
+                  </div>
+                  <div class="editor-body" id="json-editor-content">
+                    <!-- JSON highlights injected by app.js -->
+                  </div>
+                </div>
+
+                <!-- Philosophy Panel -->
+                <div class="philosophy-panel">
+                  <div class="panel-header">💡 DESIGN_PHILOSOPHY</div>
+                  <div id="philosophy-cards-box">
+                    <!-- Philosophy cards loaded by app.js -->
+                  </div>
+                </div>
+
+              </div>
+            </section>
+
+            <!-- SECTION 4: DESIGN GALLERY (gallery.sh) -->
+            <section class="panel-section" id="gallery_sh">
+              <h2 class="pixel-header">GALLERY.SH</h2>
+              
+              <!-- Category Filter Bar -->
+              <div class="gallery-filter-bar" id="gallery-filters">
+                <!-- Filters loaded by app.js -->
+              </div>
+
+              <!-- Masonry Layout Container -->
+              <div class="gallery-masonry" id="gallery-masonry">
+                <!-- Masonry nodes loaded by app.js -->
+              </div>
+            </section>
+
+            <!-- SECTION 5: RESUME PREVIEW (resume.pdf) -->
+            <section class="panel-section" id="resume_pdf">
+              <h2 class="pixel-header">RESUME.PDF</h2>
+              <div class="resume-layout">
+                
+                <div class="resume-toolbar">
+                  <span>📄 DOCUMENT: RESUME_ROHAN.PDF</span>
+                  <div style="display:flex; gap:8px;">
+                    <a href="https://drive.google.com/file/d/1S5ji37WkhsA9id2enpiNJCLsY-YfCq2R/view?usp=drivesdk" target="_blank" class="sys-btn" style="text-decoration:none;">📥 DOWNLOAD_RESUME</a>
+                    <button class="sys-btn" onclick="window.print()">🖨️ PRINT_DOCUMENT</button>
+                  </div>
+                </div>
+
+                <!-- Resume document container layout -->
+                <div class="resume-preview">
+                  <div class="resume-hdr">
+                    <h1>ROHAN</h1>
+                    <div style="font-size:14px; margin-top:4px;">UI/UX DESIGNER & SAAS SYSTEM CREATIVE</div>
+                    <div style="font-size:12px; color:var(--text-muted); margin-top:6px;">
+                      Email: rohankhurana141@gmail.com | Location: Yamunanagar, India
+                    </div>
+                  </div>
+
+                  <!-- Resume columns -->
+                  <div class="resume-grid">
+                    <div>
+                      <div class="resume-sec">
+                        <div class="resume-sec-title">⏳ GIT_COMMIT_TIMELINE</div>
+                        <div class="git-timeline" id="git-timeline-box">
+                          <!-- Timeline commits loaded by app.js -->
+                        </div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <div class="resume-sec">
+                        <div class="resume-sec-title">🧠 CAPABILITIES.JSON</div>
+                        <div style="display:flex; flex-wrap:wrap; gap:6px; margin-top:10px;" id="capabilities-json-box">
+                          <!-- Badges injected by app.js -->
+                        </div>
+                      </div>
+
+                      <div class="resume-sec">
+                        <div class="resume-sec-title">🛠️ CORE_TOOLS</div>
+                        <div style="display:flex; flex-wrap:wrap; gap:6px; margin-top:10px;">
+                          <span class="avail-tag">FIGMA (AUTO_LAYOUT)</span>
+                          <span class="avail-tag">CANVA (GRAPHICS)</span>
+                          <span class="avail-tag">FRAMER (PROTOTYPING)</span>
+                        </div>
+                      </div>
+
+                      <div class="resume-sec">
+                        <div class="resume-sec-title">🏫 EDUCATION</div>
+                        <div style="font-size:12px; line-height:1.5; margin-top:10px;">
+                          <strong>Bachelor of Computer Applications</strong><br/>
+                          Tilak Raj Chadha Institute of Management and Technology<br/>
+                          <span class="text-muted">Period: 2022 - 2025</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </section>
+
+            <!-- SECTION 6: LIVE DEPLOYS (live_deploys.sh) -->
+            <section class="panel-section" id="live_deploys_sh">
+              <h2 class="pixel-header">LIVE_DEPLOYS.SH</h2>
+              
+              <div class="deploys-layout">
+                <div class="deploy-card">
+                  <div class="deploy-status-row">
+                    <span class="text-orange" style="font-weight:bold;">MMCI Coaching Institute</span>
+                    <span class="deploy-indicator live">● LIVE_NODE</span>
+                  </div>
+                  <p style="font-size:14px; line-height:1.5;">
+                    Modern educational student coaching platform built with optimized conversion flows, responsive layout designs, and fast loading.
+                  </p>
+                  <div>
+                    <a href="https://mmcilearning.in/" target="_blank" class="btn-execute" style="display:inline-block; font-size:13px; padding: 6px 14px; text-decoration:none;">LAUNCH_WEBSITE() &gt;</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- SECTION 7: CONTACT SECURE FORM (contact_init.sh) -->
+            <section class="panel-section" id="contact_init_sh">
+              <h2 class="pixel-header">CONTACT_INIT.SH</h2>
+              
+              <div class="contact-layout">
+                <div class="contact-card">
+                  <div class="editor-header">
+                    <span>🔑 SECURE_HANDSHAKE_MODULE</span>
+                    <span class="text-orange">PORT: SECURE</span>
+                  </div>
+                  <div class="contact-terminal-body">
+                    <span class="text-orange">visitor@portfolio:~$ initiate_collaboration --now</span><br/>
+                    <span class="text-muted">> Accessing communication pipeline wizard. You can type details directly here or submit utilizing graphical textfields below.</span>
+                    
+                    <form class="contact-form" id="traditional-contact-form">
+                      <div class="form-group">
+                        <label class="form-label" for="contact-name">> NAME / ORGANIZATION:</label>
+                        <input type="text" class="form-input" id="contact-name" placeholder="Specify full name..." required>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="form-label" for="contact-email">> CONTACT EMAIL ADDRESS:</label>
+                        <input type="email" class="form-input" id="contact-email" placeholder="Specify response inbox..." required>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="form-label" for="contact-details">> DEPLOYMENT DETAILS / OBJECTIVES:</label>
+                        <textarea class="form-textarea" id="contact-details" placeholder="Describe product details, scale, timeline..." required></textarea>
+                      </div>
+
+                      <div class="form-submit-row">
+                        <span class="text-muted" style="font-size:11px;">// SECURE DISPATCH</span>
+                        <button type="submit" class="btn-submit">SUBMIT_PAYLOAD()</button>
+                      </div>
+                    </form>
+
+                    <!-- Interactive encryption logs printed here -->
+                    <div class="form-status-log" id="form-status-log"></div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+          </div>
+        </main>
+      </div>
+
+      <!-- Bottom System Terminal Console Panel -->
+      <footer class="console-panel">
+        <div class="console-header">
+          <span style="font-weight:bold; color:var(--color-orange);">🐚 INTERACTIVE_SHELL</span>
+          <span class="text-muted" style="font-size:11px;">Press ENTER to submit command</span>
+        </div>
+        
+        <!-- Terminal command log streams -->
+        <div class="console-history" id="console-history"></div>
+        
+        <!-- Command input row -->
+        <div class="console-input-row">
+          <span class="console-input-prefix" id="console-input-prefix">visitor@portfolio:~$ </span>
+          <div class="console-input-container">
+            <input type="text" class="console-input-field" id="console-input-field" autocomplete="off" placeholder="Type 'help' for terminal commands..." autofocus>
+            <div class="console-cursor-simulator"></div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <!-- Project Details Inspection Drawer overlay panel -->
+  <div class="project-inspector" id="project-inspector">
+    <div class="inspector-header">
+      <span id="inspector-title" style="font-weight:bold; font-family:var(--font-code); color:var(--color-orange);">INSPECTING: --</span>
+      <button class="sys-btn" id="inspector-close">CLOSE [X]</button>
+    </div>
+    <div class="inspector-content" id="inspector-details-box">
+      <!-- Details loaded dynamically -->
+    </div>
+  </div>
+
+  <!-- Dynamic Gallery Lightbox Overlay -->
+  <div class="gallery-lightbox" id="gallery-lightbox">
+    <span class="gallery-lightbox-close">&times;</span>
+    <div class="gallery-lightbox-content" id="lightbox-display-box">
+      <!-- Lightbox details -->
+    </div>
+  </div>
+
+  <!-- JavaScript Systems Boot Loading -->
+  <script src="js/data.js"></script>
+  <script src="js/terminal.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
